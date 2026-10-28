@@ -1,0 +1,14 @@
+h1 {
+    color: red; 
+}
+
+.article_text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: gray;
+}
+
+.article_highlight {
+    color: red;
+    font-weight: bold;
+}
