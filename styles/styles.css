@@ -2,13 +2,13 @@ h1 {
     color: red; 
 }
 
-.article_text {
+.article__text {
     font-size: 18px;
     line-height: 1.5;
     color: gray;
 }
 
-.article_highlight {
+.article__highlight {
     color: red;
     font-weight: bold;
 }
