@@ -1,18 +1,63 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Основы HTML</title>
+    <meta charset="UTF-8" />
+    <title>Page title</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="page">
-    <div class="article">
-        <h1 class="article__title">Основы HTML</h1>
-        <p class="article__text">
-            HTML - это <span class="article__highlight" style="color: red;">язык разметки</span>
-            документов во Всемирной паутине
-        </p>
-        <p class="article__text">Теги - это элементы, отвечающие за структуру HTML-документа</p>
-    </div>
+
+<body class="body">
+    <header class="page-header">
+        <a class="page-header__logo" href="#">Logo</a>
+        <nav class="page-header__nav">
+            <a class="page-header__nav-link" href="#">Мероприятия</a>
+            <a class="page-header__nav-link" href="#">Блог</a>
+            <a class="page-header__nav-link" href="#">О нас</a>
+            <a class="page-header__nav-link" href="#">Контакты</a>
+        </nav>
+        <a class="page-header__user-link" href="#">Войти</a>
+    </header>
+
+    <main class="main">
+        <div class="home">
+            <header class="main-header home__main-header">
+                <h1>АРТ-ПРОСТРАНСТВО</h1>
+                <img />
+                <p>для людей, горящих сердцем и делом<br>
+                   место для настоящего</p>
+            </header>
+
+            <section class="offers home__offers">
+                <h4 class="offers__title">Я хочу:</h4>
+                <div class="offers__btns">
+                    <button class="offers__btns btn btn--red" type="button">Провести мероприятие</button>
+                    <button class="offers__btns btn" type="button">Стать арендатором</button>
+                </div>
+            </section>
+
+            <section class="about home__about">
+                <h2 class="about__section-title section-title">О нас</h2>
+                <div class="about__container"></div>
+            </section>
+
+            <section class="upcoming home__upcoming">
+                <h2 class="upcoming__section-title section-title">Мероприятия</h2>
+                <div class="upcoming__container"></div>
+            </section>
+
+            <section class="listing home__listing">
+                <h2 class="listing__section-title section-title">Блог</h2>
+                <div></div>
+            </section>
+
+            <section class="contacts home__contacts">
+                <h2 class="contacts__section-title section-title">Контакты</h2>
+                <div class="contacts__container"></div>
+            </section>
+
+            <div class="doit"></div>
+        </div>
+    </main>
+
+    <footer class="page-footer"></footer>
 </body>
 </html>

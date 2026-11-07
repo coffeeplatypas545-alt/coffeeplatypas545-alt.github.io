@@ -12,3 +12,41 @@ h1 {
     color: red;
     font-weight: bold;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.page-header {
+    max-width: 1334px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header {
+    max-width: 1334px;
+    margin: 50px auto 100px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.offers,
+.about,
+.upcoming,
+.listing,
+.contacts {
+    max-width: 1334px;
+    margin: 0 auto 100px;
+    padding: 0 40px;
+}
+
+.page-footer {
+    max-width: 1334px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f0f0f0;
+}
