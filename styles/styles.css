@@ -149,8 +149,23 @@ body {
 }
 
 .page-footer {
-    flex: 0 0 auto;
-    background-color: blue;
+    background-color: #1f1e1e;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.page-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.page-footer a:hover {
+    color: #bc3324;
 }
 
 .event-card {
@@ -355,4 +370,88 @@ body {
     background-color: transparent;
     color: #1f1e1e;
     border-color: #1f1e1e;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1414px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 40px;
+    min-height: 500px;
+}
+
+.main-header h1 {
+    font-family: "Lora", serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    color: #1f1e1e;
+}
+
+.main-header p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4;
+    color: #1f1e1e;
+}
+
+.offers {
+    max-width: 1414px;
+    width: 100%;
+    margin: 0 auto 100px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers__title {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.offers__btns {
+    display: flex;
+    gap: 20px;
+}
+
+.about, 
+.upcoming, 
+.listing, 
+.contacts {
+    max-width: 1414px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px 100px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 80px;
+    width: 100%;
+    max-width: 624px;
+    padding: 7px 45px 9px;
+    background-color: #1f1e1e;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.28;
+    text-align: center;
+    text-transform: uppercase;
 }
