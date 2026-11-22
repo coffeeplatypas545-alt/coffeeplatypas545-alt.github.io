@@ -1,0 +1,90 @@
+.booking {
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto 100px;
+
+    &__header {
+        background-color: @black;
+        color: @white;
+        padding: 30px 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    &__fieldset--full,
+    &__footer--full {
+        grid-column: 1 / -1;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__legend {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    &__radio-label {
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        background-color: @white;
+        margin-bottom: 15px;
+    }
+
+    &__footer {
+        margin-top: 20px;
+    }
+
+    &__checkbox-label {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 30px;
+    }
+}

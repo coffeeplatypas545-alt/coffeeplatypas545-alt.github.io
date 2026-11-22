@@ -1,32 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8" />
-    <title>Page title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+@@include ('blocks/head.html')
 <body class="body">
-    <header class="page-header">
-        <div class="page-header__container">
-            <a class="page-header__logo" href="#">
-                <img class="page-header__logo-icon" src="images/logo.svg" alt="logo"/>
-            </a>
-            <nav class="page-header__nav">
-                <a class="page-header__nav-link" href="#">Мероприятия</a>
-                <a class="page-header__nav-link" href="#">Блог</a>
-                <a class="page-header__nav-link" href="#">Нас</a>
-                <a class="page-header__nav-link" href="#">Контакты</a>
-            </nav>
-            <div class="page-header__right-block">
-                <a class="page-header__user-link btn" href="#">Войти</a>
-            </div>
-        </div>
-    </header>
+    @@include ('blocks/page-header.html')
 
     <main class="main">
         <div class="home">
@@ -63,16 +39,11 @@
                 <h2 class="contacts__section-title section-title">Контакты</h2>
                 <div class="contacts__container"></div>
             </section>
-
+            <!-- prettier-ignore -->
+             @@include ('blocks/blog-listing.html')
             <div class="doit"></div>
         </div>
     </main>
-
-    <footer class="page-footer">
-        <div class="page-footer__container">
-            <p>© 2026 Lenni. Арт-пространство для людей, горящих сердцем и делом.</p>
-            <p><a href="#">Политика конфиденциальности</a> | <a href="#">Пользовательское соглашение</a></p>
-        </div>
-    </footer>
+    @@include ('blocks/page-footer.html')
 </body>
 </html>
