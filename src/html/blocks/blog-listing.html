@@ -3,18 +3,15 @@
         Блог
     </h2>
     <div class="listing__article-list">
-        <!-- prettier-ignore -->
-        @@loop('article-card.html', [
-            {
-                "class": "",
-                "img": "",
-                "alt": "",
-                "title": "",
-                "descr": "",
-                "time": "",
-                "datetime": ""
-            }
-        ])
+        @@include('article-card.html', {
+            "class": "listing__article-card",
+            "img": "assets/images/events/nirvana.jpg",
+            "alt": "nirvana",
+            "title": "Есть тема, нужно обсудить с HowStuffWorks",
+            "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
+            "time": "14.12.2026 | начало 18.30",
+            "datetime": "2026-12-14T18:30"
+        })
     </div>
     <a href="#" class="listing__link link">Смотреть все</a>
 </section>

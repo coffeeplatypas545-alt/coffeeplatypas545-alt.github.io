@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include ('blocks/head.html')
+@@include('blocks/head.html')
+
 <body class="body">
-    
-    @@include ('blocks/page-header.html')
 
-    <main class="main">
-        <div class="event-page">
-            <div class="event-page__container">
-                
-                <div class="event-page__header">
-                    <a href="events.html" class="event-page__back">← Назад к мероприятиям</a>
-                    <h1 class="event-page__title">Собираемся и слушаем альбом Nirvana</h1>
-                    <p class="event-page__date">07.12.2026 | начало 18.00</p>
-                </div>
+  @@include('blocks/page-header.html')
 
-                <div class="event-page__content">
-                    <div class="event-page__image">
-                        <img src="images/nirvana.jpg" alt="Nirvana" class="event-page__img">
-                    </div>
-                    <div class="event-page__info">
-                        <p>Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
-                    </div>
-                </div>
-                
-                @@include ('blocks/booking-form.html')
+  <main class="main">
+    <div class="event-page">
+      <div class="event-page__container">
 
-            </div>
+        <div class="event-page__header">
+          <a href="events.html" class="event-page__back">← Назад к мероприятиям</a>
+          <h1 class="event-page__title">Собираемся и слушаем альбом Nirvana</h1>
+          <p class="event-page__date">07.12.2026 | начало 18.00</p>
         </div>
-    </main>
 
-    @@include ('blocks/page-footer.html')
+        <div class="event-page__content">
+          <div class="event-page__image">
+            <img src="assets/images/events/nirvana.jpg" alt="Nirvana" class="event-page__img">
+          </div>
+          <div class="event-page__info">
+            <p>Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+          </div>
+        </div>
+
+        @@include('blocks/booking-form.html')
+
+      </div>
+    </div>
+  </main>
+
+  @@include('blocks/page-footer.html')
 
 </body>
+
 </html>

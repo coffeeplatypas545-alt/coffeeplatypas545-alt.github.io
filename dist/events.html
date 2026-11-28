@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include ('blocks/head.html')
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Page title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
 
 <body class="body">
-  @@include ('blocks/page-header.html')
+  <header class="page-header">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <svg class="page-header__logo-icon" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a class="page-header__nav-link" href="events.html">Мероприятия</a>
+        <a class="page-header__nav-link" href="#">Блог</a>
+        <a class="page-header__nav-link" href="#">Нас</a>
+        <a class="page-header__nav-link" href="#">Контакты</a>
+      </nav>
+      <div class="page-header__right-block">
+        <a class="page-header__user-link btn" href="#">Войти</a>
+      </div>
+    </div>
+  </header>
 
   <main class="main">
     <div class="events">
@@ -11,32 +36,52 @@
         <h2 class="listing__section-title section-title">Мероприятия</h2>
         <div class="listing__events-list">
           <!-- prettier-ignore -->
-          @loop('blocks/event-card.html', [
-          {
-          "class": "listing__event-card",
-          "img": "images/events/nirvana.jpg",
-          "alt": "nirvana",
-          "title": "Собираемся и слушаем альбом Nirvana",
-          "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.",
-          "time": "07.12.2026 | начало 18.00",
-          "datetime": "2022-16-07T18:00"
-          },
-          {
-          "class": "listing__event-card",
-          "img": "images/events/card2.jpg",
-          "alt": "card2",
-          "title": "Есть тема, нужно обсудить с HowStuffWorks",
-          "descr": "Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.",
-          "time": "14.12.2026 | начало 18.30",
-          "datetime": "2026-12-14T18:30"
-          }
-          ])
+          <article class="event-card listing__event-card">
+            <a href="event.html" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+              </picture>
+
+              <h4 class="event-card__title">
+                Собираемся и слушаем альбом Nirvana
+              </h4>
+
+              <p class="event-card__description">
+                Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.
+              </p>
+
+              <time datetime="2026-12-07T18:00" class="event-card__time">
+                07.12.2026 | начало 18.00
+              </time>
+            </a>
+          </article>
+          <article class="event-card listing__event-card">
+            <a href="event.html" class="event-card__link">
+              <picture class="event-card__picture">
+                <img src="assets/images/events/card2.jpg" alt="card2" class="event-card__img" />
+              </picture>
+
+              <h4 class="event-card__title">
+                Есть тема, нужно обсудить с HowStuffWorks
+              </h4>
+
+              <p class="event-card__description">
+                Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.
+              </p>
+
+              <time datetime="2026-12-14T18:30" class="event-card__time">
+                14.12.2026 | начало 18.30
+              </time>
+            </a>
+          </article>
         </div>
       </section>
     </div>
   </main>
 
-  @@include ('blocks/page-footer.html')
+  <footer class="page-footer">
+    <div class="page-footer__container"></div>
+  </footer>
 
 </body>
 
